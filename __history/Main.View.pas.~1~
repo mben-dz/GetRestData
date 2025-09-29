@@ -78,7 +78,7 @@ end;
 
 procedure TMainView.HandleOnThumbLoaded(const aStream: TStream);
 begin
-//  if not EdtBookUrl.Text.EndsWith('.jpg') then Exit;
+  if not EdtBookUrl.Text.EndsWith('.jpg') then Exit;
 
   try
     ImgBook.Bitmap.LoadFromStream(aStream);
