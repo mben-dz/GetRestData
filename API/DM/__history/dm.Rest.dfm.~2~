@@ -1,0 +1,5 @@
+object dmRest: TdmRest
+  Height = 205
+  Width = 727
+  PixelsPerInch = 144
+end

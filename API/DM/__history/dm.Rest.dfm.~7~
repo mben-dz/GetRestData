@@ -1,0 +1,108 @@
+object dmRest: TdmRest
+  OnCreate = DataModuleCreate
+  Height = 226
+  Width = 580
+  PixelsPerInch = 144
+  object RESTClient: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'utf-8, *;q=0.8'
+    BaseURL = 'https://delphi-books.com/api/b/all.json'
+    Params = <>
+    SynchronizedEvents = False
+    Left = 116
+    Top = 8
+  end
+  object RESTRequest: TRESTRequest
+    AssignedValues = [rvConnectTimeout, rvReadTimeout]
+    Client = RESTClient
+    Params = <>
+    Response = RESTResponse
+    SynchronizedEvents = False
+    Left = 40
+    Top = 104
+  end
+  object RESTResponse: TRESTResponse
+    ContentType = 'application/json'
+    Left = 180
+    Top = 104
+  end
+  object RestRespDataSet: TRESTResponseDataSetAdapter
+    Active = True
+    Dataset = fdMemT_Books
+    FieldDefs = <>
+    Response = RESTResponse
+    TypesMode = Rich
+    Left = 404
+    Top = 12
+  end
+  object fdMemT_Books: TFDMemTable
+    Active = True
+    AfterScroll = fdMemT_BooksAfterScroll
+    FieldDefs = <
+      item
+        Name = 'id'
+        DataType = ftFloat
+      end
+      item
+        Name = 'name'
+        DataType = ftWideString
+        Size = 31
+      end
+      item
+        Name = 'url'
+        DataType = ftWideString
+        Size = 62
+      end
+      item
+        Name = 'thumb'
+        DataType = ftWideString
+        Size = 71
+      end
+      item
+        Name = 'lang'
+        DataType = ftWideString
+        Size = 2
+      end
+      item
+        Name = 'pubdate'
+        DataType = ftWideString
+        Size = 10
+      end>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvUpdateChngFields, uvUpdateMode, uvLockMode, uvLockPoint, uvLockWait, uvRefreshMode, uvFetchGeneratorsPoint, uvCheckRequired, uvCheckReadOnly, uvCheckUpdatable]
+    UpdateOptions.LockWait = True
+    UpdateOptions.FetchGeneratorsPoint = gpNone
+    UpdateOptions.CheckRequired = False
+    StoreDefs = True
+    Left = 400
+    Top = 100
+    object FloatField_Booksid: TFloatField
+      FieldName = 'id'
+    end
+    object WStr_Booksname: TWideStringField
+      FieldName = 'name'
+      Size = 31
+    end
+    object WStr_Booksurl: TWideStringField
+      FieldName = 'url'
+      Size = 62
+    end
+    object WStr_Booksthumb: TWideStringField
+      FieldName = 'thumb'
+      Visible = False
+      Size = 71
+    end
+    object WStr_Bookslang: TWideStringField
+      FieldName = 'lang'
+      Size = 2
+    end
+    object WStr_Bookspubdate: TWideStringField
+      FieldName = 'pubdate'
+      Size = 10
+    end
+  end
+end

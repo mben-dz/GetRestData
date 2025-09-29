@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2025/06/13 21:16:27.000.757,=F:\2040\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/06/15 04:35:54.000.899,=F:\2040\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/09/03 04:16:13.000.115,=F:\2040\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/09/04 00:39:54.000.024,=F:\2040\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/09/29 04:34:12.414,=F:\2040\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/09/29 04:47:02.770,F:\2025 Ilyes\GetRestData\Main.View.fmx=F:\2040\Projects\Unit1.fmx</Transaction>
+    <Transaction>2025/09/29 04:47:02.770,F:\2025 Ilyes\GetRestData\Main.View.pas=F:\2040\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/09/29 04:47:17.965,F:\2025 Ilyes\GetRestData\GetRestData.dproj=F:\2040\Projects\Project1.dproj</Transaction>
+    <Transaction>2025/09/29 04:52:55.961,=F:\2025 Ilyes\GetRestData\Unit1.pas</Transaction>
+    <Transaction>2025/09/29 04:53:54.918,F:\2025 Ilyes\GetRestData\API\DM\dm.Rest.pas=F:\2025 Ilyes\GetRestData\Unit1.pas</Transaction>
+    <Transaction>2025/09/29 04:53:54.918,F:\2025 Ilyes\GetRestData\API\DM\dm.Rest.dfm=F:\2025 Ilyes\GetRestData\Unit1.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
