@@ -54,7 +54,7 @@ https://github.com/user-attachments/assets/e27464bd-0b11-43f5-ae28-a75b23bd1ee4
 
 ## ⚙️ Requirements
 
-- Delphi XE8 or newer (tested with Delphi 12 Athens) -> (because of THTTPClient)  
+- Delphi XE8 or newer (tested with Delphi 12 Athens) -> (because of [THTTPClient Categories: API Documentation XE8](https://docwiki.embarcadero.com/Libraries/Athens/en/System.Net.HttpClient.THTTPClient.OnReceiveData))  
 - FMX framework (tested on Windows target)  
 - Internet connection (for REST API + image URLs)
 
